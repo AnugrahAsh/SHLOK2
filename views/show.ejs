@@ -156,9 +156,11 @@ section{
 
 <aside>
     <h2><%= title %></h2>
-    <% if (aartiData.ramAarti && aartiData.ramAarti.length > 0) { %>
-        <h3><%= aartiData.ramAarti[0].title %></h3>
-        <p><%= aartiData.ramAarti[0].lyrics %></p>
+    <% console.log(  "aartiData.ramarti") %>
+    <% if (aartiData.ramarti && aartiData.ramarti.length > 0) { %>
+        <h3><%= aartiData.ramarti[0].title %></h3>
+        <p> </p>
+        <div> <%= aartiData.ramarti[0].lyrics %> </div>
     <% } else { %>
         <p>No Aarti available.</p>
     <% } %>
