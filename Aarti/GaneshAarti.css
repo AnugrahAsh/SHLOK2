@@ -1,0 +1,142 @@
+body{
+    font-family: "Signika", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd580;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    box-shadow: 0px 0.1px 10px 0px grey;
+    background-color: white;
+}
+.links{
+    display: flex;
+    gap: 50px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 24px;
+    width: 360px;
+    
+}
+.search input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-left: 6px;
+}
+.search input:focus{
+    outline: none;
+}
+.navButtons{
+    display: flex;
+    gap: 20px;
+}
+#login{
+    padding: 8px  20px;
+    border-radius: 16px;
+    
+    border: 3px solid black;
+    font-family: "Signika", sans-serif;
+    background: transparent;
+    transition: ease-in 0.3s;
+
+}
+#login:hover{
+    background-color: black;
+    color: white;
+    
+    transition: ease-in 0.3s;
+
+}
+#signup{
+    background-color: rgb(255, 157, 60);
+    padding: 8px  16px;
+    border-radius: 16px;
+    border: 3px solid black;
+    font-family: "Signika", sans-serif;
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+    color: black;
+
+}
+
+@media (max-width: 1200px){
+    .links{
+        gap: 18px;
+    } 
+
+}
+@media (max-width: 1000px){
+    .links, .navButtons {
+        display: none;
+    }
+}
+
+@media (max-width: 550px){
+    .search{
+        width: 240px;
+    }
+}
+@media (max-width: 450px){
+    .search{
+        width: 180px;
+    }
+}
+
+aside{
+    /* background-color: black; */
+    /* background-color: crimson ; */
+    /* background-color: orange; */
+    /* background-color: rgb(243, 122, 142); */
+    background-color: #f77f00;
+    width: 400px;
+    height: 50%;
+    text-align: center;
+    /* border-left: 3px solid black; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: ease 0.2s;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
+    gap: 30px;
+    position: sticky;
+    /* border-radius: 0 24px 24px 0; */
+    color: white;
+}
+aside a{
+    cursor: pointer;
+    color: white;
+}
+aside a:hover{
+    color: blue;
+    transition: ease 0.1s;
+}
+section{
+    height: auto;
+    background-color: white;
+    width: 100%;
+    /* border-radius: 24px; */
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.35);
+    text-align: center;
+}
+.first{
+    display: flex;
+    margin-top: 50px;
+}
