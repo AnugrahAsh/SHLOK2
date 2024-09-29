@@ -21,6 +21,10 @@ app.get('/aarti/mataji', (req, res) => {
     res.render('show', { title: "Mataji Aarti", aartiData: aartiData });
 });
 
+app.get('/', (req, res) => {
+    res.render('home');
+});
+
 app.get('*', (req, res) => {
     res.status(404).render('error');
 });
